@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# takes manual snap
+fswebcam --no-banner --delay 5 --resolution 640x480 --skip 5 --frames 25 /home/pi/plantwatcher/static/manual.jpg
+
+# upload
+python /home/pi/plantwatcher/upload_manual.py

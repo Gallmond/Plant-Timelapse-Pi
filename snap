@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# takes and saves yyyymmddThhmmss.jpg AND recent.jpg to folder
+
+# timestamp
+nowTimestamp=$(date +%Y%m%dT%H%M%S);
+
+# using filename
+echo -e '\n\n ==== using filename '$nowTimestamp'\n'
+fswebcam --no-banner --delay 5 --resolution 640x480 --skip 25 --frames 25 /home/pi/plantwatcher/img/$nowTimestamp.jpg
